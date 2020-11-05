@@ -1,0 +1,539 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+	background-color: #161616;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+#main{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-color: #edf1fd;
+	position: relative;
+}
+
+.background{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.2;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color: #f4f7ff;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+}
+
+.menu{
+	display: flex;
+}
+
+.menu li a{
+	padding: 10px 15px;
+	color: #6c707c;
+}
+
+.lang{
+	color: #292929;
+}
+
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color: #292929;
+}
+
+.menu li a:hover, 
+.active{
+	background-color: #292929;
+	color: #fff !important;
+	font-weight: 700;
+	transition: all ease 0.8s;
+}
+
+.name{
+	font-family: calibri;
+	width: 500px;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(-20%, -50%);
+}
+
+.name{
+	color: #292929;
+	font-size: 16px;
+}
+
+.name h1{
+	font-family: poppins;
+	font-size: 40px;
+	margin: 0px;
+	letter-spacing: 3px;
+	color: #292929;
+}
+
+.name p{
+	color: #292929;
+}
+
+.btnCv{
+	width: 200px;
+	height: 45px;
+	color: #fff;
+	background-color: #292929;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.btnCv:hover {
+	background-color: #131313;
+	transition: 0.5s;
+}
+
+.socmed{
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	display: flex;
+}
+
+.socmed a{
+	margin: 6px 12px;
+}
+
+.socmed i{
+	color: #2e2e1f;
+	font-size: 17px;
+}
+
+
+
+#about{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%; 
+}
+
+.aboutText{
+	font-family: calibri;
+	width: 50%;
+}
+
+.aboutText h1{
+	font-size: 5rem;
+	color: #17d1ac;
+}
+
+.aboutText h2{
+	font-size: 3rem;
+	color: #fff;
+	font-weight: 400;
+}
+
+.aboutText h1,h2{
+	margin: 0px;
+	padding: 0px;
+}
+
+.aboutText p{
+	font-size: 1.2rem;
+	color: #c2c2a3;
+}
+
+.aboutText button{
+	width: 180px;
+	height: 5vh;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	background-color: #17d1ac;
+}
+
+.aboutText button:hover{
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+
+
+#services{
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-family: calibri;
+	padding-top: 520px;
+}
+	
+.servicesHeading h1{
+	color: #fff;
+	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.servicesHeading p{
+	color: #c2c2a3;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.servicesBox{
+	background-color: #2b2b2b;
+	width: 350px;
+	height: 500px;
+	margin: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 2px 2px 12px #8a8a5c;
+	position: relative;
+}
+
+.servicesContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicesBoxImg{
+	width: 100%;
+	height: 70%;
+}
+
+.servicesBoxImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.textSepatu{
+	width: 100%;
+	height: 43%;
+	background-color: #1e1e1e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.textSepatu a{
+	margin: 0px;
+	color: #fff;
+	font-size: 1rem;
+	font-family: calibri;
+	display: block;
+	display: -webkit-box-;
+	max-width: 80%;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.servicesType{
+	font-family: calibri;
+	color: #fff;
+	position: absolute;
+	background-color: #151515;
+	padding: 10px 15px;
+	top: 10px;
+	left: 27%;
+	transform: translateY(-50%);
+	font-size: 18px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.servicesBox:hover{
+	transform: translateY(-20px);
+	transition: 1s;
+}
+
+
+#product{
+	width: 100%;
+	box-sizing: border-box;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 2% 20px 2%;
+}
+
+.p-product{
+	font-family: calibri;
+	font-size: 1.7rem;
+	text-align: center;
+	color: #fff;
+	font-weight: 400;
+	padding: 10px 20px;
+	background-color: #292929;
+	letter-spacing: 2px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 20px #8a8a5c;
+}
+
+.p-box{
+	background-color: #1f1f1f;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 2px 2px 13px #8a8a5c;
+	position: relative;
+}
+
+.p-b-container{
+	width: 90%;
+	height: 70vh;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.text-overlay{
+	font-family: calibri;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(23,209,172,0.89);
+	display: none;
+}
+
+.text-overlay h1,p{
+	color: #fff;
+}
+
+.text-overlay h1{
+	font-size: 2.2rem;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 2px;
+}
+
+.text-overlay p{
+	font-size: 1.2rem;
+	margin: 0px;
+}
+
+.p-box:hover .text-overlay{
+	display: flex;
+}
+
+.p-box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.contactBtn{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	background-color: #f4f7ff;
+	margin: 20px 0px;
+	box-sizing: border-box;
+	box-shadow: 2px 0px 20px #8a8a5c;
+}
+
+.contactBtn h1{
+	font-size: 2rem;
+	color: #1e1e1e;
+	font-family: calibri;
+	margin: 10px;
+	padding: 5px;
+	letter-spacing: 4px;
+	border-bottom: 1px solid #1e1e1e;
+}
+
+.contactBtn a{
+	color: #fff;
+	font-size: 1rem;
+	background-color: #1e1e1e;
+	width: 150px;
+	height: 40px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 5px 6px #8a8a5c;
+}	
+
+.contactBtn a:hover{
+	background-color: rgba(23,209,172,0.89);
+	transition: 0.5s;
+	color: #1e1e1e;
+}
+
+
+#contactForm{
+	width: 100%;
+	height: 90vh;
+	margin: 60px 10px 60px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactForm form{
+	display: flex;
+	width: 70%;
+	height: 60vh;
+	background-color: #1a1a1a;
+	box-shadow: 2px 12px 20px #8a8a5c;
+}
+
+.contactLeft{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contactRight{
+	width: 60%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid #8a8a5c;
+}
+
+.contactLeftHeading{
+	font-family: calibri;
+	color: #fff;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+.nameContact, .emailContact{
+	display: flex;
+	flex-direction: column;
+	font-family: calibri;
+}
+
+.nameContact font,
+.emailContact font{
+	color: #bfbfbf;
+	font-size: 22px;
+}
+
+.nameContact input,
+.emailContact input{
+	height: 30px;
+	width: 250px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid #929292;
+	color: #fff;
+	margin: 10px 0;
+}
+
+.nameContact input::placeholder,
+.emailContact input::placeholder{
+	opacity: 0.5;
+	letter-spacing: 1px;
+}
+
+.nameContact input:focus,
+.emailContact input:focus{
+	border-bottom: 1px solid #17d1ac;
+	transition: 0.5s;
+}
+
+.message font{
+	font-size: 18px;
+	color: #4e4e4e;
+	flex-direction: column;
+}
+
+.message{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactRight textarea{
+	width: 100% !important;
+	height: 290px !important;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	box-sizing: border-box;
+	color: #ebebeb;
+	font-size: 16px;
+}
+
+.contactRight textarea::placeholder{
+	color: #ebebeb;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri;
+}
+
+.contactRight button{
+	width: 100%;
+	height: 40px;
+	background-color: #1ed98b;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: calibri;
+	color: #1b1b1b;
+	margin: 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+
+
